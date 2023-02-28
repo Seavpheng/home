@@ -1,0 +1,36 @@
+body{
+    color:rgb(219, 219, 219);
+    background-color: rgb(49, 49, 49);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h1, h2, h3, h4{
+    color:mediumturquoise;
+}
+
+p::first-letter{
+    font-size: 20px;
+}
+
+li a:link {
+    color: white;
+    text-decoration: none; 
+}
+
+li a:visited{
+    color: white;
+    text-decoration: none;
+}
+li a:hover{ 
+    text-decoration: underline;
+    color: chartreuse;
+ 
+} 
+p strong {
+    color: rgb(111, 255, 0);
+}
+
+dt{
+    color: chartreuse ;
+}
+
+ 
