@@ -1,0 +1,14 @@
+.row{
+    vertical-align: middle;
+    height: 30px;     
+}
+
+.col-3{
+    width: 150px;
+    float: left;
+}
+
+.col-4{
+    width: 180px;
+    float: left;
+}

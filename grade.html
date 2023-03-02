@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/form.css" type="text/css" rel="stylesheet">
+    <title>Student Form</title>
+</head>
+<body>
+ 
+    <from action="http://mumstudents.org/params.php" method="get">
+
+        <fieldset>
+        <div class="row">
+            <div class="col-3">
+            <label for="student_id">Student ID</label> 
+            </div>
+            <input  type="text" id="student_id" name="student_id" required> 
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <label for="student_name" >Student name</label> 
+            </div>
+            <input type="text" id="student_name" name="student_name" required> 
+        </div>
+
+        <div class="row"> 
+            <div class="col-3">
+                <label for="assignment">Assignment</label>
+            </div>
+            <select id="assignment" name="assignment">
+                <option value="1">Assignment 1</option>
+                <option value="2">Assignment 2</option>
+            </select> 
+        </div>
+
+        <div class="row">  
+            <input type="checkbox" id="confirm"><label for="confirm">Confirm</label>
+        </div>
+
+        <div class="row"> 
+            <label>Entry</label>
+            <input type="radio" id="entry_apr" name="entry_id" value="4"><label for="entry_apr">April</label>
+            <input type="radio" id="entry_aug" name="entry_id" value="8"><label for="entry_aug">August</label>
+            <input type="radio" id="entry_oct" name="entry_id" value="10"><label for="entry_oct">October</label>
+        </div>
+        <input type="submit"> 
+        </fieldset>
+
+    </from>
+ 
+</body>
+</html>
