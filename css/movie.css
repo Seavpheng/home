@@ -1,0 +1,125 @@
+.banner{ 
+    background-image: url("../images/bannerbg.png"); 
+    text-align: center;
+}
+h1{
+    text-align: center; 
+    text-shadow: 3px 3px 2px gray;
+}
+body{  
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    background: url("../images/background.png");
+} 
+.main-container{
+    margin: auto;
+    width: 850px;
+    border-radius:20px;
+    border-style: double; 
+    overflow:hidden; 
+ 
+}
+.content{
+    margin: 0px;
+}
+.title{  
+    float: left;
+    width: 600px;
+    background: url("../images/rbg.png");
+    height: 83px;
+} 
+.title span{
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color:red;
+    vertical-align: top;
+}
+.section{
+    column-count: 2; 
+    column-gap: 10px;
+    overflow: hidden;
+    width: 600px; 
+} 
+.comment{ 
+    float: left;
+    overflow:hidden;   
+    width: 280px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+.comment img{
+    float: left;
+}  
+.card{
+    border: double; 
+    border-radius: 10px;
+    float : left; 
+    width: 260px;
+    padding: 5px;
+    background-color: blanchedalmond;
+}
+.card q{
+    font-size: 10pt;
+    font-weight: bold;
+} 
+.user { 
+    padding: 5px;
+}
+.user p{
+    font-size: 8pt;
+} 
+.aside{ 
+    background-color: green;
+    width: 250px; 
+    float: right;  
+    overflow: hidden;
+} 
+dl{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 8pt;
+    float: right;
+    margin: 10px 0px 0px 0px;
+     
+    width: 230px; 
+} 
+.footer{  
+    position: fixed; 
+    bottom:0px;  
+    background-color: green; 
+    margin-bottom: 20px; 
+    padding: 0px; 
+    margin-block-start: 0px; 
+    width: 850px; 
+    border-bottom-left-radius:  20px;
+    border-bottom-right-radius:  20px;
+    z-index: -1;
+}
+.footer p{
+    vertical-align: middle;
+    font-size: 8pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 0px;
+    text-align: center;
+} 
+.overview dt{
+    line-height: 1.2em;
+}
+.overview dd{
+   margin-bottom: 10px;
+
+}
+.overview ul{
+    list-style: none;
+}
+.verify-page{
+    float: right;
+    position: absolute;
+    bottom: 5px;
+    right: 5px; 
+}
