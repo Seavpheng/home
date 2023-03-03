@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/task.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    <script type="text/javascript"> 
+
+        function addTask(){ 
+            let txtTask = document.getElementById("task");  
+            let txtTaskList = document.getElementById('taskList'); 
+
+            let tmp = txtTaskList.value + txtTask.value +"\r\n"; 
+            localStorage.setItem("taskList", tmp); 
+            document.getElementById('taskList').value = tmp;
+        }
+
+        function getTask(){
+            let taskList =localStorage.getItem("taskList");
+            document.getElementById('taskList').value = taskList; 
+        }
+
+        function clearTask(){ 
+            localStorage.clear();
+            document.getElementById('taskList').value ="";
+
+        } 
+
+    </script>
+</head>
+<body onload="getTask();">
+  
+        <div class="frmTaskList"> 
+            <h1>Task List</h1>
+           <div class="col-3">
+            <div class="row">
+                <label>Task</label>
+            </div>
+            <div class="row"> 
+                <input type="text" id="task"> 
+            </div>
+           
+            <div class="row">
+                <button id="addTask" onclick="addTask();">Add Task</button>
+            </div>
+            <div>
+                <button id="clearTask" onclick="clearTask();">Clear Task</button>
+            </div>
+           </div>
+           <div class="col-4">
+            Task List
+            <textarea id="taskList"></textarea>
+           </div>
+        </div>
+     
+</body>
+</html>

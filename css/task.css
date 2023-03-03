@@ -1,0 +1,42 @@
+.frmTaskList{
+    margin: auto;
+    width: 60%;
+    border: 1px;
+    border-radius: 15px;
+    border-style: double;
+    overflow: hidden; 
+}
+
+h1{
+    margin-left: 20px;
+    color:blue;
+}
+
+.col-3{
+    width: 20%;
+    float: left;
+    padding: 20px;
+}
+.col-4{
+    width: 70%;
+    float: right;
+    padding: 20px;
+}
+
+.row{
+    height: 30px;
+}
+
+input[type='text']{
+    width: 100%;
+}
+
+button{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    height:300px;
+    size: 100ch;
+}
