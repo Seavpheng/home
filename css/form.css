@@ -12,3 +12,46 @@
     width: 180px;
     float: left;
 }
+
+.length-6-field{ 
+    max-width: 6ch;
+}
+
+input{
+    background-color: rgb(246, 177, 2);
+}
+
+input[type="submit"]{
+    background-color: rgb(246, 2, 165);
+}
+
+.length-16-field{ 
+    max-width: 16ch;
+}
+
+form{
+    padding: 20px;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+.frmsignup{
+    margin: auto;
+    width: 500px;
+   
+}
+
+.logon{ 
+    border: 1px; 
+    position: relative;
+    top:25px;
+    left:20px;
+}
+
+.logon p{
+    background-color: bisque;
+    width:fit-content;
+    border-style: double;
+    
+
+}

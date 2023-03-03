@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/form.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="frmsignup">
+        <div class="logon">
+            <img src="images/nerdluv.png" alt="">
+            <p>New User SignUp</p>
+        </div>
+        <form action="http://mumstudents.org/params.php" method="get">
+            <div class="row">
+                <div class="col-3">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="col-4">
+                    <input type="text" id="name" class="length-16-field" name="name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label>Gender</label>
+                </div>
+                <div class="col-4">
+                    <input type="radio" id="male" name="gender"> 
+                    <label for="male">Male</label> 
+                    <input type="radio" id="female" checked name="gender"> 
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="age">Age:</label>
+                </div>
+                <div class="col-4">
+                    <input type="number" id="age" class="length-6-field" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="personality_type">Personality type:</label>
+                </div>
+                <div class="col-4">
+                    <input type="text" id="personality_type" class="length-6-field" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="os">Favorite OS:</label>
+                </div>
+                <div class="col-4">
+                    <select id="os">
+                        <option selected>Windows</option>
+                        <option>Linux</option>
+                        <option>Mac OS</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    Seeking age:
+                </div>
+                <div class="col-4">
+                    <input type="number" min="" class="length-6-field">
+                    <label>to</label>
+                    <input type="number" max="" class="length-6-field">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <input type="submit" value="Sign Up">
+                </div>
+                
+            </div>
+        </form>
+    </div>
+    <div class="verify-page">
+        <p>
+            <a href="http://validator.w3.org/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="Valid CSS!" />
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="Valid CSS!" />
+            </a>
+        </p>
+    </div>
+    
+</body>
+</html>
