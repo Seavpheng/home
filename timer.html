@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script >
+        "use strict";
+       
+        setTimeout(booyah1, 2000);
+        setTimeout(booyah2(), 2000);
+
+
+        function booyah1(){
+            alert("BOOYAH !") 
+        }
+
+        function booyah2(){
+            alert("BOOYAH 2 !") 
+        }
+    </script>
+</head>
+<body>
+
+    <ol>
+        <li>What is the difference between the following 2 statements
+            <dl>
+                <dt>setTimeout(booyah, 2000);</dt>
+                <dd>this statement will delay for 2000ms then it will execute "booyah"</dd>
+                <dt>setTimeout(booyah(), 2000);</dt>
+                <dd>this statement will execute <q>booyah</q> function immediately.</dd>
+            </dl>
+        </li>
+        <li>
+            What do the following 2 alert display (answer without running the code)?
+            <pre>
+                var myfunc = function(a, x) {
+                    return a * x;
+                };
+                var x = myfunc(2, 3);
+                var y = myfunc;
+                alert(x);
+                alert(y(2,3)); 
+            </pre>
+            <dl>
+                <dt>
+                    the two statement dispaly the same result of 6.
+                </dt>
+            </dl>
+        </li>
+        <li>
+            Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says "BOOYAH!"
+            <p>
+                setTimeout(booyah1, 2000); <br>
+                setTimeout(booyah2(), 2000);
+            </p>
+        </li>
+        <li>
+            What is Unobtrusive Javascript? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?
+            <dl>
+                <dt>
+                    Unobtrusive Javascript is the way of writing Javascript language in a proper separation of document content and script content.
+                    the separation of concern makes code clean that allow you to work on Javascript without touching either HTML or CSS that allows us to code with less error prone, easy to update and to debug.
+
+                </dt>
+            </dl>
+        </li>
+    </ol>
+</body>
+</html>
