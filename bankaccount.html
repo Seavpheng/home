@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bank Account</title>
+    <script src="js/bankaccount.js">
+
+    </script>
+</head>
+<body>
+    <div id="createAcc">
+        <p>
+            <label>Account Name: <input type="text" id="txtAccountName"> </label>
+        </p>
+        <label>Deposit: <input type="text" id="txtDeposit" ></label>
+        </p>
+        <button id="btnCreate">Create new accounts</button>
+        <button id="btnDepo">Deposit</button>
+        <button id="btnDebit">Debit</button>
+        <p>
+            <textarea cols="50" rows="10" id="txtResult"></textarea>
+        </p>
+    </div>
+
+    <div id="debitTran"> 
+        <h1>Debit</h1>
+            <select id="debitAccount" > 
+            </select> 
+            <label>Debit<input type="tex" id="debit_amount"></label><br>
+            <button type="submit" id="btnSaveDebit">Submit</button>
+         
+    </div>
+
+    <div id="depoTran"> 
+        <h1>Deposit</h1>
+        <select id="depoAccount" > 
+        </select> 
+        <label>Deposit<input type="tex" id="depo_amount"></label><br>
+        <button type="submit" id="btnSaveDeposit">Submit</button>
+    </div>
+</body>
+</html>
