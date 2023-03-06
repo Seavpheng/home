@@ -49,6 +49,9 @@ function reload(){
 }
 
 const debitTransaction = function(){ 
+    if( Account.accountInfoList.length === 0 || Account.accountInfoList.length === null){
+        return;
+    }
     debitTran.hidden=false; 
     createAcc.hidden = true; 
 
@@ -63,6 +66,11 @@ const debitTransaction = function(){
 }
 
 const depositTransaction = function(){ 
+
+    if( Account.accountInfoList.length === 0 || Account.accountInfoList.length === null){
+        return;
+    }
+
     depoTran.hidden=false; 
     createAcc.hidden = true; 
 
@@ -82,7 +90,7 @@ const saveDebit =function(){
     let account = Account.accountInfoList.find(x=>x.getAccount() == select.value);
     account.saveDebit(debit_amount.value);  
 
-    debit_amount.value();
+    debit_amount.value="";
 
 
     reload();
@@ -95,11 +103,9 @@ const saveDeposit =function(){
     let depo_amount = document.getElementById('depo_amount'); 
     const select = document.getElementById("depoAccount");  
     let account = Account.accountInfoList.find(x=>x.getAccount() == select.value);
-    account.saveDeposit(depo_amount.value); 
+    account.saveDeposit(depo_amount.value);  
 
-
-    depo_amount.value =0;
-
+    depo_amount.value =""; 
     reload();
 
     depoTran.hidden= true;
