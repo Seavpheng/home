@@ -30,8 +30,7 @@ fieldset{
     border-color: black;
     border-style:inset; 
     vertical-align: top;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .controller{
@@ -44,3 +43,9 @@ fieldset::after{
     float: right;
 }
  
+.footer{ 
+    float: right;
+}
+.footer img{
+    padding: 5px;
+}
