@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        
+        <li>In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”? 
+            <dl>
+                <dd>
+                    -<q>jQuery function</q> manipulate DOM, traversing and event triggering. 
+                </dd>
+                <dd>
+                    - <q>jQuery object</q> is a collection of DOM elements and behaves like a special array.
+                </dd>
+            </dl>
+        </li>
+        
+        
+        <li>
+            Write jQuery code to find all h1 elements that are children of a div element and make their background color red.
+            <dl>
+                <dd>    
+                    <pre>
+&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"&gt&lt/script&gt
+&ltscript&gt
+    $(document).ready(function(){
+        $('div > h1').css("background", "red"); 
+    });
+&lt/script>
+                    </pre>
+                </dd>
+            </dl>
+            </li>
+        
+        
+        
+            <li>
+                Use a jQuery method to insert the text "YES!" at the end of the &ltp&gt element.
+                <dl>
+                    <dd>
+                        <pre>
+&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"&gt &lt/script&gt
+
+&ltscript&gt 
+    $(document).ready(function(){ 
+        $('p').append("Yes");
+    });
+&lt/script&gt
+
+                        </pre>
+                    </dd>
+                </dl> 
+            </li>
+        
+            <li>
+                Which, if any, of the following 3 code fragments are equivalent? Explain why they are different, if they are. Explain why they can have different parameters and be equivalent, if they are equivalent.
+                <dl>
+                    <dd>
+                        <pre>
+//code fragment 1
+$("li").each(function(idx, e) {
+    $(e).css(“color”, “yellow”); }); 
+
+                        </pre>
+                    </dd> 
+                    <dd>
+                        <pre>
+//code fragment 2
+$("li").each(function() {
+    $(this).css(“color”, “yellow”); });
+                        </pre>
+                    </dd>
+                    <dd>
+                        <pre>
+//code fragment 3
+$("li").each(function(idx) {
+    $(this).css(“color”, “yellow”); });
+                        </pre>
+                    </dd>
+                </dl>
+            </li>
+
+            <dl>
+                <dd><q>$('li').each()</q> is used to loop through each element of the target jQuery Object. </dd>
+                <dd>$('li').each(function(index, value){ }); index and value help to determine which DOM element is current iterate on</dd>
+                <dd>$('li').each(function(){ $(this)}); $(this) is object of element</dd> 
+                <dd>$('li').each(function(index){ $(this) }); with index we may use it for purpose of calcuting display sequence. </dd>
+            </dl>
+            
+
+
+
+
+            <li>
+                Write a jQuery expression to find all divs on a page that include an unordered list in them, and make their text color be blue.
+                <dd>
+<pre>
+&ltdiv&gt
+    This does contain a ul.
+    &ltul&gt
+        &ltli&gtthe first item&lt/li&gt
+        &ltli&gtthe second item&lt/li&gt
+    &lt/ul&gt
+&lt/div&gt
+&ltscript>
+    <em >$('div > ul > li').css("color", "blue"); </em>
+&lt/script&gt
+       
+</pre>
+                </dd>
+            </li>
+    </ol>
+</body>
+</html>

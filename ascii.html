@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/ascii.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1>ASCII Animation Viewer</h1>
+        <textarea cols="80" row="20" ></textarea>
+        <div class="controller" >
+            <fieldset>
+                <legend>Play Controls: </legend>
+                <button id="btnstart">Start</button>
+                <button id="btnstop">Stop</button>
+            </fieldset>
+            <fieldset>
+                <legend>Animation: </legend>
+                <select id="animation-opt">
+                    <option value="blank" >Blank</option>
+                    <option value="exercise">Exercise</option>
+                    <option value="juggler">Juggler</option>
+                    <option value="bike">Bike</option>
+                    <option value="dive">Dive</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Size: </legend>
+                <select id="font-size">
+                    <option value="tiny">Tiny (7pt)</option>
+                    <option value="small">Small (10pt)</option>
+                    <option value="medium" selected>Medium (12pt)</option>
+                    <option value="large">Large (16pt)</option>
+                    <option value="extralarge">Extra Large (24pt)</option>
+                    <option value="xxl">XXL (32pt)</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Speed: </legend>
+                <label><input type="checkbox"> Turbo</label>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(203,205, 251);
+    font-family: sans-serif;
+    background-color: #ccccff;
+    font-size: 14pt;
+    font-weight: bold;
+}
+h1{
+    font-size: 32pt;
+    text-align: center;
+    margin: 0px;
+}
+
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
+}
+
+textarea{ 
+    width: 100%;
+    height: 400px;
+    font-family: monospace;
+    font-size: 12pt; 
+}
+
+fieldset{
+    border: 5px;
+    border-color: black;
+    border-style:inset; 
+    vertical-align: top;
+    text-align: center;
+    
+}
+
+.controller{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+fieldset::after{
+    float: right;
+}
+ 
