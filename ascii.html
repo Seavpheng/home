@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/ascii.css" type="text/css" rel="stylesheet">
+
 </head>
 <body>
     <div class="main">
         <h1>ASCII Animation Viewer</h1>
-        <textarea cols="80" row="20" ></textarea>
+        <textarea cols="80" row="20" id="txtarea"></textarea>
         <div class="controller" >
             <fieldset>
                 <legend>Play Controls: </legend>
@@ -18,7 +19,7 @@
             </fieldset>
             <fieldset>
                 <legend>Animation: </legend>
-                <select id="animation-opt">
+                <select id="select_animation">
                     <option value="blank" >Blank</option>
                     <option value="exercise">Exercise</option>
                     <option value="juggler">Juggler</option>
@@ -29,20 +30,22 @@
             </fieldset>
             <fieldset>
                 <legend>Size: </legend>
-                <select id="font-size">
-                    <option value="tiny">Tiny (7pt)</option>
-                    <option value="small">Small (10pt)</option>
-                    <option value="medium" selected>Medium (12pt)</option>
-                    <option value="large">Large (16pt)</option>
-                    <option value="extralarge">Extra Large (24pt)</option>
-                    <option value="xxl">XXL (32pt)</option>
+                <select id="select_font">
+                    <option value="7pt">Tiny </option>
+                    <option value="10pt">Small </option>
+                    <option value="12pt" selected>Medium</option>
+                    <option value="16pt">Large </option>
+                    <option value="24pt">Extra Large </option>
+                    <option value="32pt">XXL </option>
                 </select>
             </fieldset>
             <fieldset>
                 <legend>Speed: </legend>
-                <label><input type="checkbox"> Turbo</label>
+                <label><input type="checkbox" id="speed"> Turbo</label>
             </fieldset>
         </div>
     </div>
+    <script src="js/animations/animations.js"></script>
+    <script src="js/animations/ascii.js"></script>
 </body>
 </html>
