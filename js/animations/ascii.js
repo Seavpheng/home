@@ -7,9 +7,13 @@ const start =function(){
 function setDisable(){
     if(inProcess===true){
         btnstop.disabled = false;
+        select_animation.disabled =true;
+        select_font.disabled = true;
+
         btnstart.disabled = true;
     }else{
-        
+        select_animation.disabled =false;
+        select_font.disabled= false;
         btnstop.disabled =true;
         btnstart.disabled =false; 
     }
