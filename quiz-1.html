@@ -6,32 +6,35 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-    <script> 
-        
-        $(document).ready(function(){
-            // $("li").each(function(idx, e) {
-            //     alert(this.id.toString());
-            //     $(e).css('color', 'yellow'); 
-            // });
+   
 
-            //code fragment 2
-            // $("li").each(function() {
-            //     alert(this);
-            //     $(this).css('color', 'yellow'); });
-           
-
-            // //code fragment 3
-            // $("li").each(function(idx) {
-            //     $(this).css('color', 'yellow'); });
-            
-            
-            $('body').append("<div><h1>JQuery Core</h1></div>");
-        }); 
-    </script>
+<style>
+    p {
+    color: blue;
+    margin: 8px;
+    }
+    span {
+    color: red;
+    }
+    </style>
 </head> 
  
 <body>
+    <div class="ancestors">
+        <div> (great-grandparent)
+            <ul> (grandparent)
+                <li> (direct parent)
+                    <span>some text</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script> 
 
+    
+$("span:contains(some text)").parent().parent().css("color", "green");
+
+    </script>
 </body>
     
 </html>
