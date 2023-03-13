@@ -1,4 +1,4 @@
-import { Account } from 'account.js';
+// import { Account } from 'account.js';
 
 const addNewAccount = function(){ 
     var accountname = document.getElementById("txtAccountName");
@@ -37,7 +37,7 @@ const debitTransaction = function(){
         var opt = document.createElement('option');
             opt.value = x.getAccount();
             opt.innerHTML = x.getAccount();
-            select.appendChild(opt); 
+            select.append(opt); 
     });  
 }
 
@@ -84,10 +84,10 @@ const saveDeposit =function(){
     createAcc.hidden = false; 
 }
 
-module.exports = {
-    addNewAccount: addNewAccount,
-    debitTransaction: debitTransaction,
-    depositTransaction: depositTransaction,
-    saveDeposit: saveDeposit,
-    saveDebit: saveDebit
-}
+// module.exports = {
+//     addNewAccount: addNewAccount,
+//     debitTransaction: debitTransaction,
+//     depositTransaction: depositTransaction,
+//     saveDeposit: saveDeposit,
+//     saveDebit: saveDebit
+// }

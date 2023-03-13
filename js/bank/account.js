@@ -1,4 +1,4 @@
-export class Account{
+class Account{
     static accountInfoList =[];
     #account;
     #deposit;

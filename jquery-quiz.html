@@ -10,6 +10,10 @@
         
         <li>In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”? 
             <dl>
+                <dd >
+                    <strong>the jquery library define a single global function named jQuery(), the global symbol $ is a shortcut for it. the value return by this function represent a set of zero or more DOM elements and is known as a jQuery object.
+                    </strong>
+                    </dd>
                 <dd>
                     -<q>jQuery function</q> manipulate DOM, traversing and event triggering. 
                 </dd>
@@ -85,6 +89,11 @@ $("li").each(function(idx) {
             </li>
 
             <dl>
+                <dd>
+                    <strong>
+                        All three are functionally equivalent. the parameter idx is not used in any case, so it is not necessary in fragmenets 2 and 3. It is necessary in fragment 1 because fragment 1 uses a second parameter to get a reference to each DOM element, which must be the second parameter. There can be fewwe parameters in fragmements 2 and 3 because JS will call a function even if ther are fewer parameters than arguments. The 'this' reference will refer to each DOM element in the each loop, so it is equivalent to the 'e' parameter in fragment 1.
+                    </strong>
+                </dd>
                 <dd><q>$('li').each()</q> is used to loop through each element of the target jQuery Object. </dd>
                 <dd>$('li').each(function(index, value){ }); index and value help to determine which DOM element is current iterate on</dd>
                 <dd>$('li').each(function(){ $(this)}); $(this) is object of element</dd> 

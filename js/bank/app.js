@@ -1,5 +1,5 @@
  
-import {tran} from './bankaccount';
+// import {tran} from './bankaccount';
 (function() { 
      
     let debitTran = null;
@@ -17,18 +17,18 @@ import {tran} from './bankaccount';
         depoTran.hidden=true; 
 
         const btn = document.getElementById("btnCreate");
-        btn.onclick = tran.addNewAccount; 
+        btn.onclick = addNewAccount; 
 
         const btndebit = document.getElementById("btnDebit");
-        btndebit.onclick = tran.debitTransaction;
+        btndebit.onclick = debitTransaction;
 
         const btndepo = document.getElementById("btnDepo");
-        btndepo.onclick = tran.depositTransaction;
+        btndepo.onclick = depositTransaction;
 
         const btnSaveDebit = document.getElementById("btnSaveDebit");
-        btnSaveDebit.onclick = tran.saveDebit;
+        btnSaveDebit.onclick = saveDebit;
 
         const btnSaveDeposit= document.getElementById("btnSaveDeposit");
-        btnSaveDeposit.onclick = tran.saveDeposit;
+        btnSaveDeposit.onclick = saveDeposit;
     };
 })();
