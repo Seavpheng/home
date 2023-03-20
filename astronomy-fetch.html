@@ -11,30 +11,35 @@
             $('#view_button').click(getPicture);
         });
 
-        function getPicture(){
-            $.ajax({
-                url:'https://api.nasa.gov/planetary/apod',
-                type: "GET",
-                data:{
-                    api_key: "DEMO_KEY",
-                    date : $("#date").val()
-                },
-                dataType: "json",
-                "success" : showPicture,
-                "error" : noPicture
-            });
+        async function getPicture(){
+            let data = { 
+                date:$('#date').val()
+                
+            }; 
+            let url = `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${data.date}`;
+            fetch(url)
+            .then(response=>{ 
+                if(response.status !=200){ 
+                    noPicture(response.json());
+                }
+                return response.json() ;
+            })
+            .then(data=>{ 
+                showPicture(data)
+            })
+            .catch(error=>{
+                $("#error-message").html(error);
+                $("#error-message").css('color', "red");
+            });  
         };
 
         function showPicture(data){ 
-       
             $('#pic').attr('src', data.url)
-            $("#caption").html(data.title);
-            $("#caption").css("color", "red");
-            
         }
 
         function noPicture(error){
-            alert('no picture');
+            $("#error-message").html(error);
+            $("#error-message").css('color', "red");
         }
     </script>
 </head>
@@ -49,7 +54,7 @@
         <p>
             <img src="" id="pic" />
         </p>
-        <h2 id="caption"></h2>
+        <p id="error-message"> </p>
     </div>
 </body>
 </html>
